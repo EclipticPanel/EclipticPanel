@@ -1,5 +1,5 @@
 # EclipticPanel
-https://img.shields.io/badge/release-v.1.0-green.svg
+[![Release](https://img.shields.io/badge/release-v.1.0-green.svg "Release")](htts://bicode.host/)
 
 [Website](http://pufferpanel.com) |
 [Community Forums](https://community.pufferpanel.com) |
