@@ -1,5 +1,5 @@
-# EclipticPanel [![Release](https://img.shields.io/badge/release-v.1.0-green.svg)]
-(https://github.com/EclipticPanel/EclipticPanel/releases) [![Downloads](https://img.shields.io/github/downloads/PufferPanel/PufferPanel/total.svg?maxAge=3600)](https://github.com/EclipticPanel/EclipticPanel/releases)
+# EclipticPanel
+https://img.shields.io/badge/release-v.1.0-green.svg
 
 [Website](http://pufferpanel.com) |
 [Community Forums](https://community.pufferpanel.com) |
