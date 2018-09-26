@@ -1,4 +1,5 @@
-# PufferPanel [![Release](https://img.shields.io/github/release/PufferPanel/PufferPanel.svg?maxAge=3600)](https://github.com/PufferPanel/PufferPanel/releases) [![Downloads](https://img.shields.io/github/downloads/PufferPanel/PufferPanel/total.svg?maxAge=3600)](https://github.com/PufferPanel/PufferPanel/releases)
+# EclipticPanel [![Release](https://img.shields.io/badge/release-v.1.0-green.svg)]
+(https://github.com/EclipticPanel/EclipticPanel/releases) [![Downloads](https://img.shields.io/github/downloads/PufferPanel/PufferPanel/total.svg?maxAge=3600)](https://github.com/EclipticPanel/EclipticPanel/releases)
 
 [Website](http://pufferpanel.com) |
 [Community Forums](https://community.pufferpanel.com) |
@@ -6,7 +7,7 @@ Community Chat: [Discord](https://discord.gg/YwUXaD6) or [irc.esper.net #pufferp
 [Documentation](http://www.pufferpanel.com/docs) |
 [Translations](https://www.transifex.com/pufferpanel/pufferpanel/)
 
-[![PufferPanel logo](http://i.imgur.com/YCy8Md2.png "PufferPanel")](https://pufferpanel.com)
+[![EclipticPanel logo](https://i.imgur.com/HRlFaIi.png "EclipticPanel")](https://bicode.host)
 
 #### Please read our [announcements](https://community.pufferpanel.com/category/1/announcements) to stay up to date about our software.
 
