@@ -7,7 +7,7 @@ Community Chat: [Discord](https://discord.gg/YwUXaD6) or [irc.esper.net #pufferp
 [Documentation](http://www.pufferpanel.com/docs) |
 [Translations](https://www.transifex.com/pufferpanel/pufferpanel/)
 
-[![EclipticPanel logo](blob:https://imgur.com/0c30b19f-0ed4-4be9-b556-d995d528e4f5 "EclipticPanel")](https://bicode.host)
+[![EclipticPanel logo](https://i.imgur.com/YzcYycf.png "EclipticPanel")](https://bicode.host)
 
 #### Please read our [announcements](https://community.pufferpanel.com/category/1/announcements) to stay up to date about our software.
 
