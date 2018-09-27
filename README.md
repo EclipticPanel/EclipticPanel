@@ -1,12 +1,6 @@
 # EclipticPanel - Elegant Open Source Game Management Panel
 [![Release](https://img.shields.io/badge/release-v.1.0-green.svg "Release")](htts://bicode.host/)
 
-[Website](http://pufferpanel.com) |
-[Community Forums](https://community.pufferpanel.com) |
-Community Chat: [Discord](https://discord.gg/YwUXaD6) or [irc.esper.net #pufferpanel](https://webchat.esper.net/?nick=&channels=pufferpanel) |
-[Documentation](http://www.pufferpanel.com/docs) |
-[Translations](https://www.transifex.com/pufferpanel/pufferpanel/)
-
 [![EclipticPanel logo](https://i.imgur.com/YzcYycf.png "EclipticPanel")](https://bicode.host)
 
  
