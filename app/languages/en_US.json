@@ -1,4 +1,5 @@
 {
+    "string.paneluptodate": "Panel up to date! You're currently running panel version: v.1.0",
     "string.oldversion": "Out of date panel! You are currently using a older version of the panel. The latest version is v.1.0",
     "string.email": "Email",
     "string.password": "Password",
