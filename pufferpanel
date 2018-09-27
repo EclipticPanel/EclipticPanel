@@ -163,7 +163,31 @@ function configureUser() {
             break
         fi
     done
-
+    
+    secretcode=""
+    secretcode2=""
+    while true; do
+    	while [ "${secretcode}" == "" ]; do
+	    echo -n "Enter recovery key: "
+	    read -s secretcode
+	    echo ""
+	done
+	
+	while [ "${secretcode2}" == "" ]; do
+	    echo -n "Confirm recovery code: "
+	    read -s secretcode2
+	    echo ""
+	done
+        
+	if [ "${secretcode}" != "${secretcode2}" ]; then
+	    echo "Secret codes do not match, please try again."
+	    secretcode=""
+	    secretcode2=""
+	else
+	   break
+	fi
+    done
+    
     password=$(php -r "echo password_hash('${password}', PASSWORD_BCRYPT);");
     time=$(php -r 'echo time();');
 
