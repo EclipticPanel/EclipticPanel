@@ -1,7 +1,7 @@
 <?php
 
 /*
-	PufferPanel - A Game Server Management Panel
+	EclipticPanel - A Game Server Management Panel
 	Copyright (c) 2015 Dane Everitt
 
 	This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see http://www.gnu.org/licenses/.
  */
-namespace PufferPanel\Core;
+namespace EclipticPanel\Core;
 use \ORM, \PDO, \Twig_Environment, \Twig_Loader_Filesystem, \Tracy\Debugger, \stdClass, \Klein\Klein;
 session_start();
 
