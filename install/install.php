@@ -51,8 +51,8 @@ try {
 	fwrite($fp, json_encode(array(
 		'mysql' => array(
 			'host' => $params['host'],
-			'database' => 'pufferpanel',
-			'username' => 'pufferpanel',
+			'database' => 'eclipticpanel',
+			'username' => 'eclipticpanel',
 			'password' => $pass,
 			'port' => 3306,
 			'ssl' => array(
@@ -123,25 +123,25 @@ try {
 	$host = isset($fullHost['host']) ? $fullHost['host'] : $fullHost['path'];
 
 	try {
-		$mysql->prepare("DROP USER 'pufferpanel'@:host")->execute(array(
+		$mysql->prepare("DROP USER 'eclipticpanel'@:host")->execute(array(
 			'host' => $host
 		));
 	} catch (\Exception $ex) {
 		//ignoring because no user actually existed
 	}
 
-	$mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON pufferpanel.* TO 'pufferpanel'@:host IDENTIFIED BY :pass")->execute(array(
+	$mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON eclipticpanel.* TO 'eclipticpanel'@:host IDENTIFIED BY :pass")->execute(array(
 		'pass' => $pass,
 		'host' => $host
 	));
-    $mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON pufferpanel.* TO 'pufferpanel'@'localhost' IDENTIFIED BY :pass")->execute(array(
+    $mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON eclipticpanel.* TO 'eclipticpanel'@'localhost' IDENTIFIED BY :pass")->execute(array(
 		'pass' => $pass
 	));
-    $mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON pufferpanel.* TO 'pufferpanel'@'172.17.42.*' IDENTIFIED BY :pass")->execute(array(
+    $mysql->prepare("GRANT SELECT, UPDATE, DELETE, ALTER, EVENT, INSERT ON eclipticpanel.* TO 'eclipticpanel'@'172.17.42.*' IDENTIFIED BY :pass")->execute(array(
 		'pass' => $pass
 	));
 
-	echo "PufferPanel SQL user added as pufferpanel@" . $host . "\n";
+	echo "EclipticPanel SQL user added as eclipticpanel@" . $host . "\n";
 	$mysql->commit();
 
 	exit(0);
