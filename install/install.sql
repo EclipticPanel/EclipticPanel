@@ -1,5 +1,5 @@
 -- Remove existing database and create new
-CREATE DATABASE IF NOT EXISTS `pufferpanel` CHARACTER SET `utf8`;
+CREATE DATABASE IF NOT EXISTS `eclipticpanel` CHARACTER SET `utf8`;
 USE `pufferpanel`;
 
 -- Disable Foreign keys to avoid errors in dropping
@@ -198,7 +198,7 @@ CREATE TRIGGER `subusers_before_delete` BEFORE DELETE ON `subusers` FOR EACH ROW
 DELIMITER ;
 
 INSERT INTO acp_settings (setting_ref, setting_val) VALUES
-            ('company_name', 'PufferPanel'),
+            ('company_name', 'EclipticPanel'),
             ('transport_token', NULL),
             ('transport_email', NULL),
             ('transport_method','php'),
