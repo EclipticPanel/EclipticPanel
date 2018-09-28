@@ -39,11 +39,11 @@ function configureMysql() {
         exit 1;
     fi
 
-    echo "Thank you for using the PufferPanel installer!"
-    echo "${bold}Please do not run this installer if PufferPanel has already been installed without first running ./pufferpanel purge${normal}"
+    echo "Welcome! We want to thank you for choosing EclipticPanel."
+    echo "If this panel has already been installed, be sure not to install it again."
     echo ""
     echo "Before we can complete the installation, we need to ask you some questions"
-    echo "These questions will help configure PufferPanel so that you can get to using it"
+    echo "These questions will help configure your panel."
     printSeparator
     echo "MySQL Configuration"
     echo -n "Enter the MySQL host [localhost]: "
@@ -71,12 +71,12 @@ function configureMysql() {
         if mysql -h ${mysqlHost} -P ${mysqlPort} -u ${mysqlUser} --password="${mysqlPass}" -e "exit"; then
             notValid=false
         else
-            echo "Database connection could not be established"
+            echo "ERROR: Database connection cound not be established."
         fi
     done
 
     echo ""
-    echo "Creating pufferpanel account and installing database..."
+    echo "Creating EclipticPanel account now....."
     mysql -h ${mysqlHost} -P ${mysqlPort} -u ${mysqlUser} --password="${mysqlPass}" < install/install.sql
     mysql -h ${mysqlHost} -P ${mysqlPort} -u ${mysqlUser} --password="${mysqlPass}" -e "SET GLOBAL event_scheduler = ON;"
 
@@ -99,7 +99,7 @@ function configureMysql() {
         \"port\": \"${mysqlPort}\"
     }
 }" > config.json
-    echo "MySQL has been configured and the database was installed"
+    echo "Success! The database was successfully configured."
     echo "Switching to new user for further commands"
     mysqlHost=""
     loadConfig
@@ -126,7 +126,7 @@ function configureSite() {
 
 function configureUser() {
     loadConfig
-    echo "Please enter the following information for the new admin user"
+    echo "Brilliant! Now lets create an admin user that you will use to access the panel."
     username=""
     email=""
     password=""
@@ -163,7 +163,31 @@ function configureUser() {
             break
         fi
     done
-
+    
+    secretcode=""
+    secretcode2=""
+    while true; do
+    	while [ "${secretcode}" == "" ]; do
+	    echo -n "Enter recovery key: "
+	    read -s secretcode
+	    echo ""
+	done
+	
+	while [ "${secretcode2}" == "" ]; do
+	    echo -n "Confirm recovery code: "
+	    read -s secretcode2
+	    echo ""
+	done
+        
+	if [ "${secretcode}" != "${secretcode2}" ]; then
+	    echo "Secret codes do not match, please try again."
+	    secretcode=""
+	    secretcode2=""
+	else
+	   break
+	fi
+    done
+    
     password=$(php -r "echo password_hash('${password}', PASSWORD_BCRYPT);");
     time=$(php -r 'echo time();');
 

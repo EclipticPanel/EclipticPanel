@@ -1,4 +1,4 @@
-USE pufferpanel;
+USE eclipticpanel;
 
 SET FOREIGN_KEY_CHECKS = 0;
 

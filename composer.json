@@ -1,24 +1,13 @@
 {
-  "name": "pufferpanel/pufferpanel",
-  "description": "A free open-source game management panel supporting Minecraft and SRCDS",
+  "name": "EclipticPanel/EclipticPanel",
+  "description": "EclipticPanel is a free open source game management panel. With our elegant and beautiful design there is no doubt your panel is the best.",
   "type": "project",
-  "homepage": "http://www.pufferpanel.com",
-  "license": "GPL-3.0",
-  "support": {
-    "issues": "https://github.com/PufferPanel/PufferPanel/issues",
-    "forum": "https://community.pufferpanel.com/",
-    "irc": "irc://irc.esper.net/pufferpanel",
-    "source": "https://github.com/PufferPanel/PufferPanel",
-    "docs": "http://docs.pufferpanel.com"
+  "license": "GPL-3.0"
   },
   "authors": [
     {
-      "name": "Joshua Taylor",
-      "email": "jtaylor@ae97.net",
-      "role": "Developer"
-    },
-    {
-      "name": "puffrfish",
+      "name": "Gabe Oliver",
+      "email": "straxxmusicteam@gmail.com",
       "role": "Founder"
     }
   ],

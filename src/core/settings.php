@@ -48,7 +48,7 @@ class Settings {
 	}
 
 	/**
-	 * Checks to make sure the config is loaded.
+	 * Checks to ensure that the config is loaded.
 	 */
 	protected static function checkStatus() {
 
