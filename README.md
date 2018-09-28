@@ -1,5 +1,5 @@
 # EclipticPanel - Elegant Open Source Game Management Panel
-[![Release](https://img.shields.io/badge/release-v.1.0-green.svg "Release")](htts://bicode.host/)
+[![Release](https://img.shields.io/badge/release-v.1.1-green.svg "Release")](htts://bicode.host/)
 
 [![EclipticPanel logo](https://i.imgur.com/YzcYycf.png "EclipticPanel")](https://bicode.host)
 
