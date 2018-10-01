@@ -1,22 +1,18 @@
-## *Who* is the bug affecting?
-<!-- Ex. All supervisors, Sally Supervisor, Level 1 CCs -->
+````````````````````````````````````````````````````````````````````````````````
+Hello, we appreciate that your are intersted in reporting a bug or requesting 
+that we look at a new feature of your idea. We ask that you follow the following
+format when creating your issue.
+NOTE: Please remove this header before submitting the issue.
 
-## *What* is affected by this bug?
-<!-- Ex. supervision, sending messages, texter profiles -->
+FOR BUG or ERROR:
+1. What is happening?
+2. Who is it affecting?
+3. When is it happening?
+4. What is happening before the last update?
 
-## *When* does this occur?
-<!-- Ex. After ending a conversation, every night at 3pm, when I sign off -->
-
-## *Where* on the platform does it happen?
-<!-- Ex. In the a Supervisor chat box, on the conversation profile page, on the two-factor screen -->
-
-
-## *How* do we replicate the issue?
-<!-- Please be specific as possible. Use dashes (-) or numbers (1.) to create a list of steps -->
-
-
-## Expected behavior (i.e. solution)
-<!-- What should have happened? -->
-
-
-## Other Comments
+FOR FEATURE REQUEST:
+1. Name of feature.
+2. Basic description.
+3. What does it do?
+4. Extra information.
+````````````````````````````````````````````````````````````````````````````````
